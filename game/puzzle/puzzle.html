@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Puzzle</title>
+	<link rel="stylesheet" type="text/css" href="puzzle.css">
+	<script type="text/javascript" src="puzzle.js"></script>
+</head>
+<body>
+	<div id="container">
+	<!-- 最外面的div，用来包含里面的结构 -->
+		<div id="game">
+		<!-- 游戏区，大div方块 -->
+			<div id="d1">1</div>
+			<div id="d2">2</div>
+			<div id="d3">3</div>
+			<div id="d4">4</div>
+			<div id="d5">5</div>
+			<div id="d6">6</div>
+			<div id="d7">7</div>
+			<div id="d8">8</div>
+		</div>
+	</div>
+	<div id="control">
+	<!-- 游戏控制区 -->	
+		<p>
+		<!-- 显示游戏时间区域 -->
+			<rowspan id="timeText"></rowspan>
+			<rowspan id="timer"></rowspan>
+		</p>
+		<p>
+		<!-- 显示控制按钮区域 -->
+			<rowspan id="start" onclick="start()">开始</rowspan>
+			<rowspan id="reset" onclick="reset()">重来</rowspan>
+		</p>
+	</div>
+	
+
+</body>
+</html>
