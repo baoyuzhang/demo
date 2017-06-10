@@ -1,0 +1,73 @@
+<!DOCTYPE html>  
+<html>  
+  
+<head>  
+    <meta charset="utf-8">  
+    <title>纯css实现下拉菜单</title>  
+    <style>  
+        li,  
+        li a {  
+            text-decoration: none;  
+            list-style-type: none;  
+            font-family: "宋体";  
+            font-size: 12px;  
+            color: #000;  
+        }  
+        li{
+        	height: 30px;
+        }
+        .btn1 {  
+            display: block;  
+            border: 1px solid #ddd;  
+            width: 50px;  
+            height: 28px;  
+            text-align: center;  
+            line-height: 28px;  
+        }  
+          
+        ul {  
+            margin-top: 1px;  
+            position: absolute; /*设置绝对定位，宽度为内容宽度*/  
+            left: -999em;   /*设置隐藏*/  
+            padding: 0;  /*离它的父元素的边界为0，所以可以位于父元素li的正下方*/  
+        }  
+          
+        ul li a {  
+            display: inline-block;  /*菜单项宽度未知，设置inline－block宽度为内容宽度*/  
+            border-top: 1px solid #ddd;  
+            border-left: 1px solid #ddd;  
+            border-right: 1px solid #ddd;  
+            height: 30px;  
+            padding: 0 10px;  
+            line-height: 30px;  
+        }  
+          
+        .last {  
+            border-bottom: 1px solid #ddd;  
+        }  
+          
+        .btn:hover ul {  
+            left: auto; /*默认ul的padding为0，位于按钮正下方*/  
+        }  
+          
+        ul li a:hover {  
+            background-color: #ddd;  
+        }  
+        .btn{  
+            display: inline-block; /*设置btn是inline－block，  
+            默认宽度为内容宽度，则鼠标只会在hover到按钮区域时才会展开下拉菜单*/  
+        }  
+    </style>  
+</head>  
+  
+<body>  
+    <li class="btn"><a class="btn1" href="#">按钮</a>  
+        <ul>  
+            <li><a href="#">下拉菜单项</a></li>  
+            <li><a href="#">下拉菜单项</a></li>  
+            <li><a href="#">下拉菜单项</a></li>  
+            <li><a class="last" href="#">下拉菜单项</a></li>  
+        </ul>  
+    </li>  
+</body>  
+</html> 
