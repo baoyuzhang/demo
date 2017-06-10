@@ -1,4 +1,5 @@
 ## CSS3实现页面平滑过渡
+[【效果预览】](https://baoyuzhang.github.io/demo/css3/Transition/Transition.html)
 1. 分析动画效果
 2. 使用@font-face引入自定义的字体
 3. 使用transform变换实现平移、旋转
